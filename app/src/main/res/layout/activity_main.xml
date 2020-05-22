@@ -11,10 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/edtPunchPower"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,22 +63,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Kick Power"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintEnd_toEndOf="@+id/edtKickSpeed"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edtKickSpeed"
-        app:layout_constraintTop_toBottomOf="@id/edtKickSpeed"
-        app:layout_constraintBottom_toTopOf="@id/button"/>
+        app:layout_constraintTop_toBottomOf="@id/edtKickSpeed" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update"
+        app:layout_constraintBottom_toTopOf="@+id/txtView"
         app:layout_constraintEnd_toEndOf="@+id/edtKickPower"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/edtKickPower"
-        app:layout_constraintTop_toBottomOf="@id/edtKickPower"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/edtKickPower" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Server_Value"
+        android:textColor="#CD0C0C"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/btnGetAlldeta"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <Button
+        android:id="@+id/btnGetAlldeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/Get_Value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtView"
+        app:layout_constraintStart_toStartOf="@+id/txtView"
+        app:layout_constraintTop_toBottomOf="@+id/txtView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

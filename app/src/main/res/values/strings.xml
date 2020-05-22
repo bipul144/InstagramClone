@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+    <string name="Server_Value">Get Data From Server</string>
+    <string name="Get_Value">Get Data</string>
 </resources>
