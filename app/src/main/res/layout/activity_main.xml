@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/edtPunchPower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPunchPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="PunchPower"
+        app:layout_constraintBottom_toTopOf="@+id/edtPunchSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@id/edtName"/>
+
+    <EditText
+        android:id="@+id/edtPunchSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="PunchSpeed"
+        app:layout_constraintBottom_toTopOf="@+id/edtKickSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/edtPunchPower"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtPunchPower"
+        app:layout_constraintTop_toBottomOf="@id/edtPunchPower"/>
+
+    <EditText
+        android:id="@+id/edtKickSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Kick Speed"
+        app:layout_constraintBottom_toTopOf="@+id/edtKickPower"
+        app:layout_constraintEnd_toEndOf="@+id/edtPunchSpeed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtPunchSpeed"
+        app:layout_constraintTop_toBottomOf="@id/edtPunchSpeed" />
+
+    <EditText
+        android:id="@+id/edtKickPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Kick Power"
+        app:layout_constraintEnd_toEndOf="@+id/edtKickSpeed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtKickSpeed"
+        app:layout_constraintTop_toBottomOf="@id/edtKickSpeed"
+        app:layout_constraintBottom_toTopOf="@id/button"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/edtKickPower"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/edtKickPower"
+        app:layout_constraintTop_toBottomOf="@id/edtKickPower"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
